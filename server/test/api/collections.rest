@@ -1,0 +1,36 @@
+@url=http://localhost:5000/api
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NDA5MTUzNywiZXhwIjoxNjg0MTc3OTM3fQ.b1EwtODsXSeefFAx8Eyv7GSlWF4fLLR2r-Fv_u4opMc
+
+
+### get all collections
+GET {{url}}/collections
+Content-Type: application/json
+
+
+### get collection by id
+GET {{url}}/collections/2
+Content-Type: application/json
+
+
+### create collection
+POST {{url}}/collections
+Content-Type: application/json
+
+{
+    "name": "new api collection"
+}
+
+
+### create collection
+PUT {{url}}/collections/5
+Content-Type: application/json
+
+{
+    "name": "col 2"
+}
+
+
+### create collection
+DELETE {{url}}/collections/19
+Content-Type: application/json
+Authorization: Bearer {{token}}

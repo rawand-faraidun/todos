@@ -1,0 +1,41 @@
+@url=http://localhost:5000/api
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY4NDA5MTUzNywiZXhwIjoxNjg0MTc3OTM3fQ.b1EwtODsXSeefFAx8Eyv7GSlWF4fLLR2r-Fv_u4opMc
+
+
+### get all todos
+GET {{url}}/todos/collection/20
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+### get todo by id
+GET {{url}}/todos/10
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+### create todo
+POST {{url}}/todos
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "my last todo",
+    "collectionId": 13
+}
+
+
+### create todo
+PUT {{url}}/todos/15
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "updated todo"
+}
+
+
+### create todo
+DELETE {{url}}/todos/10
+Content-Type: application/json
+Authorization: Bearer {{token}}
