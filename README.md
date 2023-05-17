@@ -9,15 +9,17 @@ Todo application for Web Development course - Final project
 Get a copy of the project
 
 ```git
-https://github.com/rawand-faraidun/todos.git
+git clone https://github.com/rawand-faraidun/todos.git
 ```
 
 ### Usage
 
--   Install the necessary packages within both `client` and `server`
+-   Through the terminal install the necessary packages, within root folder, then both `client` and `server`:
 
 ```npm
-npm i
+npm i;
+cd server; npm i;
+cd client; npm i;
 ```
 
 -   Pay attention to `.env.example` file in the `server` directory. rename it into `.env` or create a file with `.env` name and add the necesarry env variables.
@@ -36,3 +38,4 @@ npm run client-dev
 ```npm
 npm run dev
 ```
+
